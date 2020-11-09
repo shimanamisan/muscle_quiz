@@ -191,8 +191,10 @@ if (empty($_POST)) {
         ?>
 
       <div class="qs-contents">
-        <div class="monster-area"> 
-          <img  src="<?php echo sanitize($img); ?>" alt="">
+        <div class="monster-area js-monster-are"> 
+          <div class="monster-img" id="monster">
+            <img  src="<?php echo sanitize($img); ?>" alt="">
+          </div>
         </div>
         
             <div class="qs">

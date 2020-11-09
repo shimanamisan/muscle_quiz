@@ -15,10 +15,10 @@ $(function () {
       phoneFlg: function () {
         if (phoneActive) {
           console.log("ユーザーエージェントを実行");
-          // $home.css({
-          //   // height: 'auto',
-          //   // height: `${window.outerHeight}`,
-          // });
+          $home.css({
+            height: 'auto',
+            height: `${window.outerHeight}`,
+          });
         }
       },
       phone: phoneActive,
@@ -34,6 +34,7 @@ $(function () {
   let $monster = $("#monster"); // 画像を包んでいる要素の
   let monsterHeight = $monster.innerHeight(); // 画像を包んでいる要素の高さ
   let monsterWrapp = $(".js-monster-area"); // 画像領域の親要素
+  console.log(monsterHeight);
   monsterWrapp.attr("style", "height: " + monsterHeight + "px");
 
   $(".answer").on("click", function () {
